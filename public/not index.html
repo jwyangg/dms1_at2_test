@@ -45,6 +45,12 @@
     slide_sound.src = 'aud/doorbeep_clean_01.mp3'
 
     const circle = document.getElementById ('circle_el')
+    circle.onpointeriver = () => {
+        circle.src = 'img/her.png'
+    }
+    circle.onpointerleave = () => {
+        circle.src = 'img/cir.png'
+    }
     circle.onpointerdown = () => {
         slide_sound.play ()
     }
