@@ -32,7 +32,7 @@
     <body>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img src="img/cir.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="circle_el" ><img src="img/cir.png" height="200" width="200"/></div></div>
             <div class="right-column"><div class="image-container"><img src="img/tri.png" height="200" width="200"/></div></div>
             <div class="center-column"><div class="image-container"><img src="img/squ.png" height="200" width="200"/></div></div>
         </div>
@@ -52,3 +52,13 @@
     </body>
     
 </html>
+
+<script>
+    const slide_sound = document.createElement ('audio')
+    slide_sound.src = 'aud/doorbeep_clean_01.mp3'
+
+    const circle = document.getElementById ('circle_el')
+    circle.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
