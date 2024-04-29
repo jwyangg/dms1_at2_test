@@ -32,21 +32,21 @@
     <body>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img id="circle_el" src="img/cir.png" height="200" width="200"/></div></div>
-            <div class="right-column"><div class="image-container"><img src="img/tri.png" height="200" width="200"/></div></div>
-            <div class="center-column"><div class="image-container"><img src="img/squ.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="food" src="img/1_1.png" height="200" width="200"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="t1" src="img/1_2.png" height="200" width="200"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="movie" src="img/1_3.png" height="200" width="200"/></div></div>
         </div>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img src="img/hex.png" height="200" width="200"/></div></div>
-            <div class="right-column"><div class="image-container"><img src="img/rec.png" height="200" width="200"/></div></div>
-            <div class="center-column"><div class="image-container"><img src="img/sta.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="architecture" src="img/1_4.png" height="200" width="200"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="taekwondo" src="img/1_5.png" height="200" width="200"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="game" src="img/1_6.png" height="200" width="200"/></div></div>
         </div>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img src="img/trr.png" height="200" width="200"/></div></div>
-            <div class="right-column"><div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div></div>
-            <div class="center-column"><div class="image-container"><img src="img/her.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="instrument" src="img/1_7.png" height="200" width="200"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="concert" src="img/1_8.png" height="200" width="200"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="hangul" src="img/1_9.png" height="200" width="200"/></div></div>
         </div>
 
     </body>
@@ -56,14 +56,142 @@
     const slide_sound = document.createElement ('audio')
     slide_sound.src = 'aud/doorbeep_clean_01.mp3'
 
-    const circle = document.getElementById ('circle_el')
-    circle.onpointerover = () => {
-        circle.src = 'img/her.png'
+    const food = document.getElementById ('food')
+    food.onpointerover = () => {
+        food.src = 'img/1_1.png'
     }
-    circle.onpointerleave = () => {
-        circle.src = 'img/cir.png'
+    food.onpointerdown = () => {
+        food.src = 'img/2_1.png'
     }
-    circle.onpointerdown = () => {
+    food.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const slide_sound = document.createElement ('audio')
+    slide_sound.src = 'aud/doorbeep_clean_01.mp3'
+
+    const t1 = document.getElementById ('t1')
+    t1.onpointerover = () => {
+        t1.src = 'img/1_2.png'
+    }
+    t1.onpointerdown = () => {
+        t1.src = 'img/2_2.png'
+    }
+    t1.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const slide_sound = document.createElement ('audio')
+    slide_sound.src = 'aud/doorbeep_clean_01.mp3'
+
+    const movie = document.getElementById ('movie')
+    movie.onpointerover = () => {
+        movie.src = 'img/1_3.png'
+    }
+    movie.onpointerdown = () => {
+        movie.src = 'img/2_3.png'
+    }
+    movie.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const slide_sound = document.createElement ('audio')
+    slide_sound.src = 'aud/doorbeep_clean_01.mp3'
+
+    const architecture = document.getElementById ('architecture')
+    architecture.onpointerover = () => {
+        architecture.src = 'img/1_4.png'
+    }
+    architecture.onpointerdown = () => {
+        architecture.src = 'img/2_4.png'
+    }
+    architecture.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const slide_sound = document.createElement ('audio')
+    slide_sound.src = 'aud/doorbeep_clean_01.mp3'
+
+    const taekwondo = document.getElementById ('taekwondo')
+    taekwondo.onpointerover = () => {
+        taekwondo.src = 'img/1_5.png'
+    }
+    taekwondo.onpointerdown = () => {
+        taekwondo.src = 'img/2_5.png'
+    }
+    taekwondo.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const slide_sound = document.createElement ('audio')
+    slide_sound.src = 'aud/doorbeep_clean_01.mp3'
+
+    const game = document.getElementById ('game')
+    game.onpointerover = () => {
+        game.src = 'img/1_6.png'
+    }
+    game.onpointerdown = () => {
+        game.src = 'img/2_6.png'
+    }
+    game.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const slide_sound = document.createElement ('audio')
+    slide_sound.src = 'aud/doorbeep_clean_01.mp3'
+
+    const instrument = document.getElementById ('instrument')
+    instrument.onpointerover = () => {
+        instrument.src = 'img/1_7.png'
+    }
+    instrument.onpointerdown = () => {
+        instrument.src = 'img/2_7.png'
+    }
+    instrument.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const slide_sound = document.createElement ('audio')
+    slide_sound.src = 'aud/doorbeep_clean_01.mp3'
+
+    const concert = document.getElementById ('concert')
+    concert.onpointerover = () => {
+        concert.src = 'img/1_8.png'
+    }
+    concert.onpointerdown = () => {
+        concert.src = 'img/2_8.png'
+    }
+    concert.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
+<script>
+    const slide_sound = document.createElement ('audio')
+    slide_sound.src = 'aud/doorbeep_clean_01.mp3'
+
+    const hangul = document.getElementById ('hangul')
+    hangul.onpointerover = () => {
+        hangul.src = 'img/1_9.png'
+    }
+    hangul.onpointerdown = () => {
+        hangul.src = 'img/2_9.png'
+    }
+    hangul.onpointerdown = () => {
         slide_sound.play ()
     }
 </script>
